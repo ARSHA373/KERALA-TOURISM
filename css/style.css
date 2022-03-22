@@ -58,7 +58,7 @@ color: #fff;
   left: 0;
   right: 0;
   width: 500px;
-  height: 430px;
+  height: 390px;
 }
 .form-box .header-text {
   color: beige;
@@ -102,7 +102,7 @@ bottom: 0;
 left: 0;
 right: 0;
 width: 500px;
-height: 430px;
+height: 480px;
 }
 .form-sign .header-value {
 color: beige;
@@ -131,15 +131,21 @@ font-size: 18px;
 padding: 10px;
 margin: 20px 0px;
 }
+.form-sign p{
+  color: beige;
+}
 /*signup ends*/
 
 /* explore*/
 /* kerala*/
 /*map*/
-.kerala-short{
-position: absolute;
-right: 3%;
-top: 23%;
+.responsive{
+  float: right;
+ height: 525px;
+ width:450px;
+ box-shadow: 0 0 10px #000;
+ padding: 10px;
+ border-radius: 25px;
 }
 /* map ends*/
 
