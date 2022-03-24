@@ -58,11 +58,67 @@
 <!--/NAVBAR ENDS-->
 
 <!--LOGIN-->
-<div class="form-box">
-  <div class="header-text">
-    Welcome Back!
-  </div><input placeholder="Your Email Address" type="text"> <br><input placeholder="Your Password" type="password"><br><button>login</button>
+<!-- START OF CONTAINER -->
+<div class="container-fluids col-md-5 col-xl-4 colorWhite g-0">
+    <div class="row text-center  justify-content-center">
+        <p class="h3">Welcome Back!</p>
+    </div>
+    <div class="row bgcolorBlue justify-content-center mb-3 rounded"><div class="col-12 px-5">
+
+<!-- FORM STARTING -->
+<form class="row g-3 mt-4" action="index.html" onsubmit="return validate()">
+    <div class="col-12">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control rounded-3" id="inputEmail4" required/>
+        </div>
+        <div class="col-12 ">
+            <p class="h6 text-danger" id="emailErr" hidden=true></p>
+            </div>
+            <!-- END OF EMAIL INPUT -->
+        <div class="col-12 mb-3">
+            <div class="d-flex justify-content-between">
+            <label for="inputPassword4" class="form-label">Password</label>
+          </div>
+          <input type="password" class="form-control col-12 rounded-3" id="inputPassword4" required/>
+          <a href="#" target="_blank" class="text-decoration-none">Forgot Password?</a>
+        </div>
+            <div class="col-12 ">
+            <p class="h6 text-danger" id="passwordErr" hidden = true></p>
+            </div>
+            <!-- END OF PASSWORD INPUT -->
+
+            <div class="col-12 form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">Remember me</label>
+            </div>
+            <!-- END OF REMEMBER ME CHECK BOX -->
+
+            <div class="col-10 mb-4 mx-auto">
+            <button
+                type = "submit"
+                class="btn btn-success mx-auto w-100 rounded-pill"
+                onclick="validate()">
+                Sign in
+            </button>
+            </div>
+            <!-- END OF SUBMIT BUTTON -->
+</form>
+<!-- END OF FORM -->
 </div>
+<!-- END OF COLUMN TEXT -->
+</div>
+<!-- END OF SIGN IN ROW -->
+
+<div class="row text-center mb-5 p-3 bgcolorBlue rounded">
+    <p class="col-12 h6">Not yet a member?
+        <a href="signup.html" class="text-decoration-none ms-2">Create an account</a>
+    </p>
+</div>
+<!-- END OF NEW ACCOUNT ROW -->
+</div>
+<!-- END OF CONTAINER -->
+
+<script  type="text/javascript" src="./js/login.js"></script>
 <!--/LOGIN ENDS-->
 
 </body>
