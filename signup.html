@@ -58,12 +58,55 @@
 <!--/NAVBAR ENDS-->
 
 <!--SIGN-UP-->
-<div class="form-sign">
-  <div class="header-value">
-    Sign Up!
-  </div><input placeholder="Your Name" type="text"><input placeholder="Your Email Address" type="text"> <br><input placeholder="Your Password" type="password"><br><br><p> Already have an account?  <a href="login.html"> Login</a></p><button>Sign Up</button>
-</div>
+<div class="Sign"> 
+    <form action="index.html" onsubmit="return Validate();">
+      <fieldset class="form-group">
+          <legend style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif6;color: beige; font-size: 300%;">Sign Up</legend>
+          <div class="row">
+            <div class="col">
+                <label for="Name">Name</label>
+                <input class="form-control" id="fname" type="text" placeholder="Name" required >
+                <label for="fname" id="fnamelabel"></label>
+            </div>
+
+          <div class="row">
+            <div class="col">
+                <label for="E-mail-Address">E-mail address</label>
+                <input class="form-control" id="email" type="text" placeholder="E-mail address" required>
+                <label id="emailtext"></label>
+            </div>
+            
+            <div class="col">
+                <label for="Contact-number">Contact number</label>
+                <input class="form-control" id="contact" type="text" maxlength="10" placeholder="Contact number" required>
+                <label for="contacttext" id="contacttext"></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+                <label for="Password">Password</label>
+                <input class="form-control" id="password" type="password" placeholder="Password" required>
+                <label for="strength-bar" id="strengthbar"></label>
+            </div>
+
+          </div>
+          <br>
+          <div class="text-center">
+            <button class="btn btn-lg btn-success text-center" >Sign Up</button>
+          </div>
+          <div class="row text-center mb-1 p-3 bgcolorBlue rounded">
+          <p class="col-12 h6">
+            Already have an account?<span class="me-3"></span>
+            <a href="login.html" class="text-decoration-none">Sign in</a>
+          </p> </div>
+          </div>
+      </fieldset>
+    </form>
+  </div>
 <!--/SIGN-UP ENDS-->
+
+<script src="./js/signup.js"></script>
 
 </body>
 </html>
